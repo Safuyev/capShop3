@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    .cardBox{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        height: 90%;
+        .card{
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            width: 32%;
+            height: 90%;
+            -webkit-box-shadow: inset 3px -139px 37px -28px rgba(0,0,0,0.54);
+            -moz-box-shadow: inset 3px -139px 37px -28px rgba(0,0,0,0.54);
+            box-shadow: inset 3px -139px 37px -28px rgba(0,0,0,0.54);
+            h5{
+                color: white;
+                font-size: 25px;
+                margin-bottom: 40px;
+            }
+        }
+        .men{
+            background: url(https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items1.jpg);
+            justify-content: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .women{
+            background: url(https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items2.jpg);
+            justify-content: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .baby{
+            background: url(https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items3.jpg);
+            justify-content: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:576px){
+    .section{
+        height: 200vh;
+        .cardBox{
+            flex-direction: column;
+            width: 90%;
+            .card{
+                width: 90%;
+                margin: 10px;
+            }
+        }
+    }
+}
+@media screen and (min-width:577px) and (max-width:991px){
+    .section{
+        height: 100vh;
+        .cardBox{
+            flex-wrap: wrap;
+            .card{
+                width: 45%;
+                height: 50%;
+                margin: 10px;
+            }
+        }
+    }
+}

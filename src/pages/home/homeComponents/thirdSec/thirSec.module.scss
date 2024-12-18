@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    .sectionName{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10%;
+        width: 85%;
+        margin-bottom: -10%;
+        border-bottom: 1px solid;
+        h2{padding-top: 55  px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            list-style: none;
+            li{
+                a{
+                    color: black;
+                    text-decoration: none;
+                    transition: .4s;
+                    font-size: 16px;
+                    font-weight: 500;
+                    &:hover{
+                        color: red;
+                        transition: .4s;
+                    }
+                }
+            }
+            .red{
+                a{
+                    color: red;
+                    border-bottom: 3px solid red;
+                }
+            }
+        }
+    }
+    .cardBox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90%;
+        width: 90%;
+        .card{
+            height: 400px;
+            width: 22%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+            margin: 10px;
+            span{
+                del{
+                    color: yellow;
+                }
+            }
+            .image{
+                width: 100%;
+                height: 75%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:576px){
+    .section{
+        height: auto;
+        .sectionName{
+            h2{
+                font-size: 22px;
+            }
+            flex-wrap: wrap;
+        }
+        .cardBox{
+            flex-wrap: wrap;
+            .card{
+                width: 300px;
+                height: auto;
+                .image{
+                    height: auto;
+                    img{
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:991px){
+    .section{
+        height: auto;
+        .sectionName{
+            h2{
+                font-size: 22px;
+            }
+            flex-wrap: wrap;
+        }
+        .cardBox{
+            flex-wrap: wrap;
+            .card{
+                width: 40%;
+                height: auto;
+                .image{
+                    height: auto;
+                    img{
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+}

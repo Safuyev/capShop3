@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    background: url(https://preview.colorlib.com/theme/capitalshop/assets/img/hero/h1_hero1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 105vh;
+    width: 100%;
+    .text{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 9%;
+        span{
+            color: red;
+            font-size: 40px;
+            font-weight: 200
+        }
+        h1{
+            color: black;
+            font-size: 45px;
+            font-weight: 400;
+        }
+        button{
+            padding: 15px 50px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            cursor: pointer;
+            transition: .4s;
+            &:hover{
+                transition: .4s;
+                background-color: transparent;
+                color: black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px){
+    .section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .text{
+            position: static;
+            width: 80%;
+        }
+    }
+}
+@media screen and (min-width:577px) and (max-width:991px){
+    .section{
+        .text{
+            width: 45%;
+        }
+    }
+}
